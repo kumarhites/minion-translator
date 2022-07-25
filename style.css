@@ -1,0 +1,143 @@
+:root{
+  --font: 'Edu TAS Beginner', cursive;
+  --primary: #F7D15C;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.nav{
+  background-color: var(--primary);
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.nav > h1{
+  padding: 15px;
+}
+.flex-container{
+  height: 60vh;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  background-color: #f3d783;
+  border-radius: 30px;
+  box-shadow: 10px 10px 25px #f7d46e;
+}
+.flex-item1{
+  height: 100%;
+  width: 50%;
+  background-color: #F6F6F6;
+  position: relative;
+}
+.minion--img{
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  height: 120px;
+  width: 120px;
+}
+.text{
+  margin-left: 150px;
+  font-family: var(--font);
+}
+.flex-item2{
+  height: 100%;
+  width: 50%;
+  background-color: #faebbd;
+}
+.output{
+  margin: 10px;
+  padding-left: 20px;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.language{
+  margin-top: 50px;
+  margin-left: 40px;
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 20px;
+  color: gray;
+}
+textarea{
+  resize: none;
+  margin: 30px;
+  height: 50%;
+  width: 85%;
+  background-color: #f0d78c;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: var(--font);
+  font-size: 24px;
+}
+.right{
+  float: right;
+  margin-right: 55px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 5px 5px 10px #f7d46e;
+  font-size: 20px;
+  font-family: var(--font);
+  font-weight: 400;
+}
+.right:hover{
+  background-color: #f0d78c;
+}
+.footer{
+   width: 100%;
+   background-color: var(--primary);
+   text-align: center;
+}
+.footer-heading, .footer-content{
+  text-align: center;
+  font-family: var(--font);
+}
+.footer-heading{
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.footer-content{
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+/* responsive */
+@media only screen and (max-width: 600px){
+  .flex-container{
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 88vh;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  .flex-item1, .flex-item2{
+    min-width: 200px;
+    height: 50%;
+    width: 100%;
+  }
+  textarea{
+    resize: none;
+    margin: 20px;
+    min-height: 50%;
+    min-width: 85%;
+  }
+  .minion--img{
+    display: none;
+  }
+  .language{
+    margin-top: 15px;
+  }
+}

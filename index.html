@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Minion Translator</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav class="nav">
+        <h1>Minion Translator</h1>
+      </nav>
+      <div class="flex-container">
+        <div class="flex-item1">
+          <p class="language">Minionese</p>
+          <div>
+            <img src="./img/minion.png" alt="" class="minion--img">
+            <p class="minion--img text">Bello!</p>
+          </div>
+          <p class="output">Translated text will appear here!</p>
+        </div>
+        <div class="flex-item2">
+          <p class="language">English</p>
+          <textarea id="input" placeholder="Enter the text here to convert to banana language 🍌"></textarea>
+          <button id="submit" class="right">Translate</button>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="footer-heading">About</p> 
+        <p class="footer-content">Are you a fan of minions? Did you know that the gibberish they say is an actual language.  Use the translator to convert your text from English to Minion speak or Banana language.</p>
+      </footer>
+    </div>
+   
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
