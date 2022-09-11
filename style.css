@@ -141,3 +141,17 @@ textarea{
     margin-top: 15px;
   }
 }
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.socials > .footer-heading{
+  margin-bottom: 10px;
+}
+.socials ul{
+  display: flex;
+  gap: 2rem;
+}
